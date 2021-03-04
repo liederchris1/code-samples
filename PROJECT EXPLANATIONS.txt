@@ -1,0 +1,34 @@
+Read Me
+
+Included in this repository are a few cool projects that I have completed for school.
+
+P1_ search : 
+
+A project implementing several search algorithms for a pacman agent. The algorithms allowed pacman to navigate the board. 
+
+Algorithms implemented in search.py:
+- Depth First Search
+- Breadth First Search
+- Uniform Cost Search 
+- A Star Search 
+
+To run search algorithms run these commands from the root of the project
+(Close the window of the pacman game to terminate the search) 
+
+DFS - python3 pacman.py -l bigMaze -z .5 -p SearchAgent
+BFS - python3 pacman.py -l bigMaze -p SearchAgent -a fn=bfs -z .5
+UCS - python3 pacman.py -l mediumScaryMaze -p StayWestSearchAgent
+A*Search - python3 pacman.py -l bigMaze -z .5 -p SearchAgent -a fn=astar,heuristic=manhattanHeuristic
+
+
+P2_search:
+
+Implemented adversarial search concepts, reflex agent, minimax and alpha-beta pruning in the pacman world. 
+
+To run search algorithms run these commands from the root of the project
+(Close the window of the pacman game to terminate the search) 
+
+Reflex agent - python3 autograder.py -q q1
+Minimax - python3 autograder.py -q q2
+Alpha Beta Pruning - python3 pacman.py -p AlphaBetaAgent -a depth=3 -l smallClassic
+
