@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <header>
+      <pre>
+Chris Lieder
+Project03 
+      </pre>
+    </header>
+
+    <title>Grateful Dead Stories</title>
+    <link rel="stylesheet" href="style.css">
+
+
+    
+    <script>
+      
+      function change_story(i){
+        var video;
+         var text;
+        if(i==0){
+          video = "https://www.youtube.com/embed/yp2_cl3cjF0"
+          text = "Jerry Garcia 'playing for his life'"
+        }
+        if(i==1){
+          video = "https://www.youtube.com/embed/qj6ardnopJQ"
+          text = "Coffee shenanigans"
+                }
+         if(i==2){
+          video = "https://www.youtube.com/embed/G2IDtMy-ca8"
+          text = "Truckin"
+                }
+        
+         
+        document.getElementById('video').src = video;
+        document.getElementById('title').innerHTML= text;
+         
+      }
+    </script>
+  </head>
+
+  <body>
+    <h1>
+      <img id="syf"
+        src="https://i.redd.it/l108on95e4401.png"
+        alt="Steal Your Face Logo"
+        style="width:300px;height:300px;"
+      />
+      <br />Grateful Dead Stories
+    </h1>
+    <p class = "description">
+      There are all kinds of interesting stories surrounding the Grateful Dead!
+      <br />
+      <em>Disclaimer:</em> Lots of the dead history features references to drug
+      use. I don't condone this behavior, however it makes for some entertaining
+      stories!
+    </p>
+
+    <br />
+
+    <h2 id ="title">
+      Jerry Garcia "playing for his life"
+    </h2>
+    <iframe id = "video"
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/yp2_cl3cjF0"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+    <br />
+    
+    <p id ="buttonsvid">
+      <button type ="button" onclick ="change_story(0)"> Playing for his life </button>
+      <button type ="button" onclick ="change_story(1)"> Coffee Shenanigans </button>
+      <button type ="button" onclick ="change_story(2)"> Truckin </button>
+
+        
+    </p>
+
+    
+    <h1>
+      Menu
+    </h1>
+    <nav>
+      <a href="index.html">Home</a><br />
+      <a href="recordings.html">Live Concert Recordings</a><br />
+      <a href="pictures.html">Pictures</a><br />
+      <a href="contact.html">Contact Me</a>
+    </nav>
+  </body>
+
+  <footer>
+    <pre>
+Chris Lieder
+Project03
+      </pre
+    >
+  </footer>
+</html>

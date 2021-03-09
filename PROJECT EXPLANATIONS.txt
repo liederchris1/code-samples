@@ -2,6 +2,14 @@ Read Me
 
 Included in this repository are a few cool projects that I have completed for school.
 
+In Web Programming Folder
+
+Web 1 - Project03:
+A Very basic project completed for my web programming 1 class. Demonstrates an understanding of HTML, Javascript and CSS and how they work together.
+
+
+In Artificial Intelligence Folder
+
 P1_ search : 
 
 A project implementing several search algorithms for a pacman agent. The algorithms allowed pacman to navigate the board. 

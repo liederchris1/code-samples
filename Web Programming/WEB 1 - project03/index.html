@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <header>
+      <pre>
+Chris Lieder
+Project03
+      </pre>
+    </header>
+
+    <title>Grateful Dead</title>
+    <link rel="stylesheet" href="style.css">
+
+    
+    <script>
+      function calculate_time(){
+        var death = new Date("08/09/1995");
+        var date1 = new Date();
+        var dif = (((date1.getTime() - death.getTime())/(1000 * 3600 * 24))|0);
+        document.getElementById('time').innerHTML = dif +" days" ;
+      }
+    
+    
+    </script>
+  </head>
+
+  <body>
+    <h1>
+      <img id="syf"
+        src="https://i.redd.it/l108on95e4401.png"
+        alt="Steal Your Face Logo"
+        style="width:300px;height:300px;"
+      />
+      <br />
+      <div id = "t">
+        The Grateful Dead
+        </div>
+    </h1>
+    <p class = "description">
+      My name is Chris Lieder. I'm a 22 year old "deadhead." <br />
+
+      This website will be used to share some of my favorite pictures, stories
+      and concert recordings!
+      
+    </p>
+    
+    <p>
+      
+    
+      <button type="button" onclick="calculate_time()" > How many days has it been since the end of The Grateful Dead (The day Jerry Garcia died)? </button>
+      <p id = "time">
+        
+    </p>
+    </p>
+        
+  
+
+    <br />
+
+    <h1>
+      Menu
+    </h1>
+    <nav>
+      <a href="pictures.html">Pictures</a><br />
+      <a href="recordings.html">Live Concert Recordings</a><br />
+      <a href="stories.html">Stories</a><br />
+      <a href="contact.html">Contact Me</a>
+    </nav>
+  </body>
+
+  <footer>
+    <pre>
+Chris Lieder
+Project03 
+      </pre
+    >
+  </footer>
+</html>

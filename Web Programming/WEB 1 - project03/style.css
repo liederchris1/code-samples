@@ -1,0 +1,74 @@
+@keyframes rainbow{
+  33%{color: blue;}
+  66%{color: white;}
+  100%{color:red;}
+}
+body {
+  background-color: #BBEBFC;
+  margin: 0 10%;
+  font-family: sans-serif;
+}
+h1 {
+  text-align: center;
+  font-family: serif;
+  font-weight: normal;
+}
+h2 {
+  text-align: center;
+  font-family: serif;
+  font-weight: bold;
+}
+p {
+  text-align: center;
+}
+
+p#days {
+  font-size: 85%;
+}
+nav {
+  text-align: center;
+}
+img {
+        display: block;
+         margin-left: auto;
+         margin-right: auto;
+      }
+iframe {
+        display: block;
+         margin-left: auto;
+         margin-right: auto;
+      }
+/*transition to rotate the steal your face logo on mouse hover  */
+img#syf{
+  transition: transform 5s;
+}
+img#syf:hover{
+  transform: rotateY(360deg);
+  
+}
+/* transition to enlarge the photos on mouse hover */
+img.pics{
+  transition: transform 1s;
+}
+img.pics:hover{
+  transform:scale(2.0);
+}
+/* animation to change the colors of the font on the main page */
+div#t{
+  color:red;
+  animation-name: rainbow;
+  animation-duration: 10s;
+  animation-iteration-count:infinite;
+  
+}
+
+/* transition to increase the font on the page descriptions on mouse hover */
+p.description{
+  font-size:100%;
+  transition: font-size 1s;
+  
+}
+p.description:hover{
+  font-size: 125%;
+  
+}

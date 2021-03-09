@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <header>
+      <pre>
+Chris Lieder
+Project03
+      </pre>
+    </header>
+
+    <title>Grateful Dead Recordings</title>
+    <link rel="stylesheet" href="style.css">
+
+
+    
+    <script>
+      
+       function change_recording(i){
+        var recording;
+         var text;
+        if(i==0){
+          recording = "https://archive.org/embed/gd77-05-08.sbd.hicks.4982.sbeok.shnf"
+          text = "Cornell '77"
+        }
+        if(i==1){
+          recording = "https://archive.org/embed/gd77-05-09.sbd.connor.8304.sbeok.shnf"
+          text = "Buffalo '77"
+                }
+         if(i==2){
+          recording = "https://archive.org/embed/gd72-08-27.sbd.orf.3328.sbeok.shnf"
+          text = "Oregon '72"
+                }
+        if(i==3){
+          recording = "https://archive.org/embed/gd73-06-10.sbd.hollister.174.sbeok.shnf"
+          text = "Robert Kennedy Stadium '73"
+        }
+         if(i==4){
+          recording = "https://archive.org/embed/gd89-07-17.sbd.unknown.17702.sbeok.shnf"
+          text = "Alpine Valley '89'"
+        }
+         
+        document.getElementById('recording').src = recording;
+        document.getElementById('recording_name').innerHTML= text;
+         
+      }
+    
+    </script>
+  </head>
+
+  <body>
+    <h1>
+      <img id="syf"
+        src="https://i.redd.it/l108on95e4401.png"
+        alt="Steal Your Face Logo"
+        style="width:300px;height:300px;"
+      />
+      <br />Grateful Dead Recordings
+    </h1>
+    <p class = "description">
+      The Grateful Dead performed <em> over 2500 concerts </em> and there are
+      recordings of almost every one! <br />
+      It can be a little overwhelming trying to get into their live music, with
+      so many options. <br />
+      In order to make it a little less daunting, I'm including some of my
+      favorite live recordings. Here they are!
+    </p>
+
+    <br />
+
+    <h1>
+      My favorite concert recordings
+    </h1>
+    <dl>
+      <dt>
+        <a
+          href="https://archive.org/details/gd77-05-08.sbd.hicks.4982.sbeok.shnf"
+          target="_blank"
+          >Cornell 77
+        </a>
+      </dt>
+      <dd>
+        Many people consider this show to be one of the best of all time. It is
+        great from front to back and is a wonderful showcase of '77 dead
+      </dd>
+      <dt>
+        <a
+          href="https://archive.org/details/gd77-05-09.sbd.connor.8304.sbeok.shnf"
+          target="_blank"
+        >
+          Buffalo 77</a
+        >
+      </dt>
+      <dd>
+        This show happened a few days after Cornell. Personally it's my favorite
+        show of all time.
+      </dd>
+      <dt>
+        <a
+          href="https://archive.org/details/gd72-08-27.sbd.orf.3328.sbeok.shnf"
+          target="_blank"
+        >
+          Oregon 72</a
+        >
+      </dt>
+      <dd>
+        This is another popular show, incredible from front to back. Highlights
+        include a 30+ minute Dark Star breaking into El Paso. Weird and Wild!
+      </dd>
+      <dt>
+        <a
+          href="https://archive.org/details/gd73-06-10.sbd.hollister.174.sbeok.shnf"
+          target="_blank"
+        >
+          Robert Kennedy Stadium 73</a
+        >
+      </dt>
+      <dd>
+        Absolutley ripping show! Great example of "Wall of Sound" era Dead 
+      </dd>
+      <dt>
+        <a
+          href="https://archive.org/details/gd89-07-17.sbd.unknown.17702.sbeok.shnf"
+          target="_blank"
+        >
+          Alpine Valley Music Theater 89</a
+        >
+      </dt>
+      <dd>
+        This is one of my favorite shows from the 80s. It features a different
+        sound than the 70s dead.
+      </dd>
+    </dl>
+    
+    
+    <h1>
+      Recordings! 
+    </h1>
+    
+    <p id="recording_name">
+      Cornell 
+    </p>
+    <iframe id="recording" src="https://archive.org/embed/gd77-05-08.sbd.hicks.4982.sbeok.shnf" width="500" height="140" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+    
+     <p id="buttons">
+      <button type = "button" onclick= "change_recording(0)"> Cornell 77 </button> 
+      <button type = "button" onclick= "change_recording(1)"> Buffalo 77 </button> 
+      <button type = "button" onclick= "change_recording(2)"> Oregon 72 </button> 
+      <button type = "button" onclick= "change_recording(3)"> Robert Kennedy 73 </button> 
+      <button type = "button" onclick= "change_recording(4)"> Alpine Valley 89 </button> 
+    </p>
+
+
+    <h1>
+      Menu
+    </h1>
+    <nav>
+      <a href="index.html">Home</a><br />
+      <a href="pictures.html">Pictures</a><br />
+      <a href="stories.html">Stories</a><br />
+      <a href="contact.html">Contact Me</a>
+    </nav>
+  </body>
+
+  <footer>
+    <pre>
+Chris Lieder
+Project03 
+      </pre
+    >
+  </footer>
+</html>
